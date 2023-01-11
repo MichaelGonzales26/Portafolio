@@ -1,0 +1,181 @@
+html{
+    position: relative;
+width: 1280px;
+height: 1024px;
+
+background: #F3F5FC;
+}
+head{
+    position: flex;
+    left: 36.67%;
+    right: 37.43%;
+    top: 0%;
+    bottom: 0%;    
+    background: #0A3871;
+}
+.logo{
+    position: relative;
+    margin-top: 20px;
+}
+
+.bod{
+    width: 1200px;
+    margin: 0 auto;
+    padding: 0 0 10px 100px;
+}
+textarea{
+    height: 343px;
+    width: 464px;
+    font-size:x-large;
+}
+.bod li{
+    display: inline-block;
+}
+.persona{
+    padding: 0 0 0 10px;
+}
+.mensaje{
+    width: 40%;
+    margin: 0 1.5% 0 0;
+    padding: 0 60px 0 0;
+}
+.texto{
+    border: none;
+    font-size:30px;
+    box-sizing: content-box;
+    resize: none;
+    color: darkblue;
+}
+
+.mensaje-encriptado{
+    width: 30% ;
+    margin: 0 1.5%;
+    padding: 30px 80px;
+    font-size: 20px;
+    vertical-align: top;
+    box-shadow: 0px 24px 32px -8px rgb(26, 25, 25);
+    border-radius: 30px;
+}
+.pantalla-texto{
+    font-size: 15px;
+    color: grey;
+    display: block;
+    width: 90%;
+    padding: 0 0 0 0;
+}
+.botonEncriptar{
+    background: darkblue;
+    color: white;
+    border: none;
+    
+}
+
+.botonDesencriptar{
+    background: lightblue;
+    color: black;
+    border-width: 1px;
+}
+.botonEncriptar, .botonDesencriptar{
+    width: 40%;
+    padding: 15px 0;
+    font-size: 14px;
+    margin: 0 20px 10px 20px;
+    border-radius: 15px;
+    transition: 1.2s;
+}
+.botonEncriptar:hover{
+    transform: scale(1.2);
+}
+.botonDesencriptar:hover{
+    transform: scale(1.2);
+}
+.mensaje-uno{
+    text-align: center;
+    font-weight: bold;
+    font-size: 30px;
+    color: rgb(10, 10, 44);
+    margin: 5px 5px 5px 100px;
+}
+.mensaje-dos{
+    text-align: center;
+    font-size: 20px;
+    color: rgb(10, 10, 44);
+    margin: 5px 0 0 100px
+}
+footer{
+    background: blue;
+    padding: 100px 0 100px 0;
+}
+div p{
+    width: 50%;
+    color: white;
+    font-size: 25px;
+    display: inline-block;
+    vertical-align: top;
+    margin: 60px 0 0 50px;
+}
+@media screen and (max-width:500px){
+
+    .bod{
+        width: 400px;
+    }
+
+    .mensaje{
+        width: 100%;
+    }
+
+    textarea{
+        width: 100%;
+        height: 300px;
+    }
+
+    .botones{
+        display: block;
+        text-align: center;
+        width: 100%;
+        
+        margin: 0 1.5%;
+        padding: 50px 3px 0 0;
+    }
+
+    .botonEncriptar, .botonDesencriptar{
+        width: 60%;
+        padding: 15px 0;
+        font-size: 16px;
+        border-radius: 15px;
+        transition: 1s all;
+        cursor: pointer;
+        margin: 0 20px 10px 20px;
+    }
+    .mensaje-encriptado{
+        width: 100% ;
+        margin: 0 1.5%;
+        padding: 30px 20px;
+        font-size: 20px;
+        vertical-align: top;
+        box-shadow: 0px 24px 32px -8px rgba(7, 7, 7, 0.08);
+        border-radius: 30px;
+    }
+    footer{
+        width: 520px;
+        height: 100%;
+        background: darkblue;
+        padding: 100px 0 100px 0;
+    }
+    .persona{
+        display: none;
+    }
+
+    .footer {
+        width: 500px;
+    }
+
+    div p{
+        width: 40%;
+        color: white;
+        font-size: 10px;
+        display: inline-block;
+        vertical-align: top;
+        margin: 20px 0 0 50px;
+    }
+}
