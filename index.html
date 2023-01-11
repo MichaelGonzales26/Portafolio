@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+
+<html lang="es" data-lt-installed="true">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width">
+        <title>Encriptador y Desencriptador</title>
+        <link rel="stylesheet" href="reset.css">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <img class="logo" src="images/Logo.png">
+        <Main>
+            <div class="bod"> 
+                
+                <li class="mensaje">
+                    <textarea class="texto-A" id="texto" type="text" cols="30" rows="15" required="" placeholder="Ingrese Mensaje" onfocus="this.placeholder=''" onblur="this.placeholder='Ingrese Mensaje'"spellcheck="false" data-gramm="false"></textarea>
+                    <div class="botones">
+                        <button class="botonEncriptar" id="botonEncriptar" onclick="Encriptar()">
+                            Encriptar
+                        </button>
+                        <button class="botonDesencriptar" id="botonDesencriptar" onclick="Desencriptar()">
+                            Desencriptar
+                        </button>
+                    </div>
+                </li>
+                <li class="mensaje-encriptado">
+                    <output id="textoEncriptado" class="pantalla-texto">
+                        <img class="persona" id="persona" src="images/Muñeco.png" alt="persona buscando">
+                        <p class="mensaje-uno" id="mensajeUno">No se encontro el Texto</p>
+                        <p class="mensaje-dos" id="mensajeDos">Ingrese texto para desencriptar o encriptar</p>
+                    </output>
+                    <div id="respuesta"></div>
+                    <button class="botonCopy" id="botonCopy" style="width: 40%; padding: 15px 0; font-size: 14px; border-radius: 15px; cursor: pointer; margin: 50px 20px 10px 110px;background: white;color: blue;border-width: 1px;border-color: darkblue;" onclick="copiarAlPortapapeles()">
+                        Copiar
+                    </button>
+                </li>
+            </div>
+        </Main>
+    </body>
+    <script src="script.js"></script>
+    <footer>
+        <div class="footer">
+            <p>Desarrollado por: Michael Gonzales Llerena</p>
+        </div>
+
+    </footer>
+</html>
